@@ -1,0 +1,607 @@
+html{
+  font-size: 65.5%;
+  box-sizing: border-box;
+}
+/*ここからスマホ「body_header」*/
+@media screen and (max-width:767px){
+
+body{
+ margin: 0;
+}
+.header_box{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.header_logo{
+  width: 27vw;
+    padding: 0 2vw;
+    margin-top: 2vw;
+}
+.navi_list{
+  display: none;
+}
+ul{
+  padding-top: 80px;
+    text-align: center;
+    line-height: 2rem;
+}
+li{
+  margin-right: 1rem;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+#nav{
+  position: fixed;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    top: 7%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: .7s;
+    z-index: 100;
+}
+#nav ul{
+  padding-top: 80px;
+  text-align: center;
+  line-height: 2rem;
+}
+#nav ul li{
+  list-style-type: none;
+  padding-bottom: 3rem;
+}
+
+#nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+#nav span{
+  color: #F79214;
+}
+#nav button{
+  border-radius: 77px;
+  width: 25rem;
+  font-size: 1.6rem;
+  height: 6rem;
+  background-color: #F79214;
+  color: inherit;
+}
+#nav button a{
+  color: white;
+}
+#hamburger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 44px;
+  transition: 1s;
+}
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 20px;
+}
+#line3 {
+  bottom: 0px;
+}
+.in{
+  transform: translateX(-100%);
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+}
+.line_1 {
+  transform: translateY(20px) rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: translateY(-20px) rotate(45deg);
+  bottom: 0;
+}
+/*ここからスマホ「main(main_content)」*/
+.main_box{
+  position: relative;
+}
+.main_back_img{
+  width: 100%;
+   height: auto;
+}
+.main_content{
+  position: relative;
+    width: 100%;
+}
+.main_content_comment{
+  text-align: center;
+    font-size: 3vw;
+    width: 100vw;
+    position: absolute;
+    top: -48vw;
+}
+.main_content_images{
+  width: 100vw;
+    height: auto;
+    position: absolute;
+    top: -27vw;
+    display: flex;
+    padding: 0 8vw;
+}
+.main_content_images img:first-of-type{
+  width: 23vw;
+    padding-right: 3vw;
+}
+.main_content_images img:nth-of-type(2){
+      width: 33vw;
+    padding-right: 3vw;
+}
+.main_content_images img:last-of-type{
+  width: 23vw;
+}
+.main_content_buttons{
+  margin-top: 3rem;
+  margin-bottom: 2%;
+}
+.main_content_buttons a{
+  color: black;
+}
+.main_content_buttons button:first-of-type{
+  background-color: #F79214;
+    width: 90vw;
+    padding: 2%;
+    border-radius: 3rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 6vw;
+}
+.main_content_buttons button:last-of-type{
+   background-color: white;
+    width: 90vw;
+    padding: 1%;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid #E0E0E0;
+}
+.main_content_caution{
+      text-align: justify;
+    padding: 0 3vw;
+    width: 90vw;
+}
+.main_content_caution p{
+  font-size: 1.2rem;
+  text-align: left;
+  color: #A2A2A4;
+}
+/*ここからスマホ「main(wrapper)」*/
+.main_about_wrapper{
+  background-color: #F79214;
+}
+.main_about{
+  margin: 0 auto;
+  align-items: center;
+}
+.main_about_comment{
+  padding: 1vw 4vw 5vw 3vw;
+}
+.main_about_comment h3{
+  font-size: 4vw;
+    text-align: center;
+    color: white;
+}
+.main_about_comment p{
+  text-align: left;
+    color: white;
+    font-size: 2vw;
+}
+.main_about button{
+  background-color: white;
+    color: #F79214;
+    border-radius: 70px;
+    border: none;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+button span{
+  font-size: 2rem;
+  font-weight: bold;
+}
+}
+/*ここからタブレット「body_header」*/
+@media screen and (min-width:768px){
+body{
+  margin: 0;
+}
+.header_logo{
+  padding-top: 2vh;
+    padding-left: 3vw;
+}
+.navi_list{
+  display: none;
+}
+ul{
+  padding-top: 80px;
+    text-align: center;
+    line-height: 2rem;
+}
+li{
+  
+  margin-right: 1rem;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  opacity: 0.7;
+  color: white;
+}
+#nav{
+  position: fixed;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    top: 7%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: .7s;
+    z-index: 100;
+}
+#nav ul{
+  padding-top: 80px;
+  text-align: center;
+  line-height: 2rem;
+}
+#nav ul li{
+  list-style-type: none;
+  padding-bottom: 3rem;
+}
+#nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+#nav span{
+  color: #F79214;
+}
+#nav button{
+  border-radius: 77px;
+  width: 25rem;
+  font-size: 1.6rem;
+  height: 6rem;
+  background-color: #F79214;
+  color: inherit;
+}
+#nav button a{
+  color: white;
+}
+#hamburger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 44px;
+  transition: 1s;
+}
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 20px;
+}
+#line3 {
+  bottom: 0px;
+}
+.in{
+  transform: translateX(-100%);
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+}
+.line_1 {
+  transform: translateY(20px) rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform: translateY(-20px) rotate(45deg);
+  bottom: 0;
+}
+/*ここからタブレット「main(main_content)」*/
+.main_back_img{
+  display: none;
+}
+.main_box{
+  position: relative;
+}
+.back_img{
+  width: 100%;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_content{
+  width: 50%;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    margin-left: 4rem;
+}
+.main_content_comment{
+  text-align: center;
+    font-size: 2.3vw;
+}
+.main_content_images{
+  display: flex;
+}
+.main_content_images img:first-of-type{
+  padding-right: 2vw;
+}
+.main_content_images img:nth-of-type(2){
+  padding-right: 2vw;
+}
+.main_content_buttons{
+  margin-top: 2vh;
+    margin-bottom: 6vh;
+    display: flex;
+}
+.main_content_buttons button:first-of-type{
+  background-color: #F79214;
+  padding: 1vh 5vw;
+    border-radius: 3rem;
+    border: none;
+}
+.main_content_buttons button:last-of-type{
+   background-color: white;
+    padding: 1% 5%;
+    border-radius: 3rem;
+    border: 1px solid #E0E0E0;
+}
+.main_content_buttons a{
+  color: black;
+}
+.main_content_caution{
+  width: 95vw;
+}
+.main_content_caution p{
+  font-size: 1.2rem;
+  color: #A2A2A4;
+}
+/*ここからタブレット「main(wrapper)」*/
+.main_about_wrapper{
+  background-color: #F79214;
+  padding-bottom: 1rem;
+}
+.main_about{
+  align-items: center;
+    position: relative;
+}
+.main_about_comment{
+  width: 50%;
+    padding-top: 1vh;
+    padding-left: 4vw;
+}
+.main_about_comment br{
+  display: none;
+}
+.main_about_comment h3{
+  font-size: 4vw;
+    color: white;
+}
+.main_about_comment p{
+  text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+.main_about button{
+  background-color: white;
+    color: #F79214;
+    border-radius: 70px;
+    border: none;
+    width: 24vw;
+    padding: 1rem;
+    position: absolute;
+    right: 5vw;
+    top: 8vh;
+}
+.main_about button a:hover{
+  opacity: 0.7;
+  color: #F79214;
+}
+}
+/*ここからPC「body_header」*/
+@media screen and (min-width:1080px){
+  body{
+  margin: 0;
+}
+.header{
+  position: relative;
+    z-index: 100;
+}
+.header_box{
+  display: flex;
+}
+.header_logo{
+  padding-top: 1rem;
+    padding-left: 3vw;
+    width: 14rem;
+}
+.navi_list{
+  display: block;
+    position: absolute;
+    top: -7rem;
+    right: 0rem;
+}
+.navi_list button{
+  background-color: #F79214;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    margin-top: -1rem;
+}
+.navi_list button a{
+  color: white;
+}
+ul{
+  display: flex;
+  list-style: none;
+}
+li{
+  margin-right: 3rem;
+    line-height: 0rem;
+    font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.navi_list a:hover{
+  opacity: 0.7;
+  color: black;
+}
+#nav{
+  display: none;
+}
+#hamburger {
+  display: none;
+}
+
+/*ここからPC版「main(main_content)」*/
+.back_img{
+  width: 100%;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0rem;
+}
+.main_content{
+  width: 50%;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    margin-left: 2rem;
+}
+.main_content_comment{
+  text-align: center;
+    font-size: 2rem;
+}
+.main_content_images{
+  display: flex;
+  justify-content: center;
+}
+.main_content_images img:first-of-type{
+  padding-right: 1rem;
+}
+.main_content_images img:nth-of-type(2){
+  padding-right: 1rem;
+}
+.main_content_buttons{
+  margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.main_content_buttons button:first-of-type{
+  background-color: #F79214;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    border: none;
+}
+.main_content_buttons button:last-of-type{
+   background-color: white;
+    padding: 1% 5%;
+    border-radius: 3rem;
+    border: 1px solid #E0E0E0;
+}
+.main_content_buttons a{
+  color: black;
+}
+.main_content_caution{
+      width: 50%;
+    margin: 0 auto;
+}
+.main_content_caution p{
+  font-size: 1rem;
+    color: #A2A2A4;
+    display: inline-block;
+    text-align: left;
+}
+/*ここからPC版「main(wrapper)」*/
+.main_about_wrapper{
+  background-color: #F79214;
+    position: relative;
+    top: 58rem;
+}
+.main_about{
+  width: 50%;
+    align-items: center;
+    position: relative;
+}
+.main_about_comment{
+  width: 100%;
+}
+.main_about_comment h3{
+  font-size: 4rem;
+    text-align: center;
+}
+.main_about_comment p{
+    font-size: 1.5rem;
+    width: 47rem;
+    margin: 0 auto;
+}
+.main_about button{
+  background-color: white;
+    color: #F79214;
+    border-radius: 70px;
+    border: none;
+    width: 12vw;
+    padding: 1rem;
+    position: absolute;
+    right: -27vw;
+    top: 11vh;
+}
+/*ここまでmain*/
+
+
+/*ここまでfooter*/
+}
